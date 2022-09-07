@@ -1,4 +1,4 @@
-# CSCI_571_Notes_22fall
+# CSCI 570 Course Notes
 
 This is the repo for Sean to upload and to manage his notes for CSCI-570-Algorithms-Anaylsis classes at USC.
 
