@@ -11,3 +11,4 @@ This is the repo for Sean to upload and to manage his notes for CSCI-570-Algorit
 
 - [Week 01](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Week_1)
 - [Week 02](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Week_2)
+- [Week 03](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Week_3)
