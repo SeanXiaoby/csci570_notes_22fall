@@ -53,6 +53,7 @@
     - n women: {w1, .... wn}
     - Attempt **perfect matching**: one man to one woman
     - Each man/woman has a peferance list: From best to worst
+    - **❕Instatblility**: One pair of (m, w) that: m has a w' ranked higher than w and w' also has m ranked higher than her m'
     - **Satble Matching**: Perfect matching + no instatblity
     - Input: Peference lists of men and women
     - Output: Set of n pairs w/ no instability
