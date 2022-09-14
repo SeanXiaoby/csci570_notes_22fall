@@ -109,3 +109,11 @@ Therefore, pairing larger a_i with larger b_i can obtain the maximized payoff. Q
 ### Problem 7
 
 #### Answer:
+
+The inserting process is shown below:
+
+<img src = "./src/img_2.jpeg" width  = 100%>
+
+So the final result array should be:
+
+**{19, 16, 10, 8, 14, 9, 3, 2, 4,1,7}**
