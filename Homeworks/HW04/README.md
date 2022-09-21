@@ -101,7 +101,11 @@ THen we find the next max bandwidth edge in the graph and compare it with the ma
 
 #### Answer:
 
+Firstly, we start from this unreliable node $S'$ and pick its lowest-cost edge. Assume the other side of this edge is a vertex called $S''$.
 
+Then we  perform Prim's algorithm starting from $S''$ but do not consider all the edges that connects $S'$ to find a minimum spanning tree.
+
+The MST we find plus this $S'$ is the final result we expect then.
 
 ---
 
