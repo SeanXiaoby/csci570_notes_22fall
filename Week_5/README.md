@@ -16,9 +16,9 @@ Find out which steps are Divide, conqueror and merge
 
 ### Runtime complexity ananysis
 
-|Divede|Conqueror|Merge|
+|Divide|Conqueror|Merge|
 |---|---|---|---|
-|$O(1)$|$a*T(n/b)$ on m sub-problems|$O(n)$ on array size of n|
+|O(1)|a*T(n/b) on m sub-problems|O(n) on array size of n|
 
 $T(n) = T(1)$ or $aT(n/b) + D(n) + C(n)$
 
