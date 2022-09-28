@@ -98,6 +98,29 @@ That is: $T(n) = \Theta(n)$
 
 ### Problem 5
 
+- #### Part I: Prove only strings with same length can be J-similar to each other
+
+Suppose that there are two strings str1 and str2, where str1 is shorter than str2 by one char, and str1 is J-similar to str2. Then these two strings can only comply to the second case of J-similar definitions.
+
+To comply these two strings to the second case, we divide these two strings into two halfs: $str1_a, str1_b, str2_a, str2_b$. Since str1 is one char shorter than str2, then $str1_a$ should have a same size with $str2_a$ and $str1_b$ should be one char shorter than $str2_b$. 
+
+Since str1 and str2 are J-similar:
+    
+- Case (a): If $str1_a$ is J-similar to $str2_a$, then $str1_b$ and $str2_b$ should also be J-similar too. However, this statement can hold only if the grand statement for this whole problem can hold. Then this is a recursive problem and we have to divide $str1_b$ and $str2_b$ into halfs over and over again. Since $str1_b$ is one char shorter than $str2_b$, when one of them is divided into only one char left and the other has no char left, this statement cannot hold. And the recursion will return false level by level. So this case can not stand.
+- Case (b): If $str1_a$ is J-similar to $str2_b$, then $str1_b$ and $str2_a$ should also be J-similar too. Since $str1_a$ and $str2_b$ are of the same size and $str1_b$ is one char shorter than $str2_a$, this is the same problem as we solve in the case(a) and this statement cannot stand.
+
+Therefore, we can only have strings of the same size that can be J-similar to each other.
+
+- #### Part II: Designing an algorithm
+
+FIrst, we divide the given two strings into two halfs. We compare if the first half of the string-1 is J-similar to eihter two halfs of string-2 respectively. If it does, we compare if the remaining two halfs are J-similar. Or if not, then these two string are not J-similar. This step can only have two operations at most for each time.
+
+We do this step recursively until there are only one char left in the divided string. If these two chars are equal, we return true and return the result level by level. Finally we will get the final results for this problem.
+
+The runtime should be:
+
+$T(n) = 2T(n/2) + \Theta(n)$  ->  $T(n) = \Theta(nlogn)$
+
 
 
 ---
