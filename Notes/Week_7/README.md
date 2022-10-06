@@ -1,5 +1,7 @@
 # CSCI 570 - Week 07
 
+## Dynamic programming *Part I*
+
 **Lecture date:** Oct. 5<sup>th</sup>, 2022
 
 ---
@@ -67,7 +69,11 @@ Goal: Going home with most energy
 
 - **Recursive component:** $OPT(i)$: optimal level of energy when we reach stage $i$
 
-$OPT(i) = max(OPT(i-1)-50-e_i, OPT(i-2)-150-e_i, OPT(i-3)-350-e_i)$
+$$\begin{align}
+  OPT(i) = max(OPT(i-1)-50-e_i,\\
+   OPT(i-2)-150-e_i,\\
+    OPT(i-3)-350-e_i)
+\end{align}$$
 
 Also, remember some **corner cases** initializations:
 
@@ -76,6 +82,7 @@ $OPT(0) = E_0$
 $OPT(1) = E_0 - 50 -e_1$
 
 $OPT(2) = max(OPT(1)- 50- e_2, E_0 - 150 -e_2)$
+
 
 - **Memorization component:** 
 
@@ -110,3 +117,72 @@ $OPT(0) = 0$
 $OPT(1) = 1$
 ...
 $OPT(24) = min(...)$
+
+---
+
+## 0-1 Knapsack problem / Subset sum problem
+
+### Problem statement:
+
+On slides
+
+### DP solution:
+
+- $OPT(i)$: value of optimal solutions for requests from 1 to i
+
+<!-- If $n\notin O(n)$, $OPT(n) = OPT(n-1)$
+If $n\in O(n)$, $OPT(n) = OPT(n-1) + w_n$ -->
+
+SEE slides and textbook!!
+
+
+### Psuedo polynomial runtime complexity!
+
+
+---
+
+## Discussion session
+
+### Problem 1 
+
+Two variables same as the last problem in the lecture
+
+
+### Problem 2
+
+$$OPT(i) = \begin{cases}
+  OPT(i-1)\\
+  min( OPT(i-1) + 3, OPT(i-7) +10)
+\end{cases} $$
+
+### Problem 3
+
+- #### Figure (a)
+
+$OPT(i,j) = OPT(i-1,j) + OPT(i,j-1)$
+
+Runtime: $O(nm)$
+
+- #### Figure (b)
+
+Corner cases initialization (There are only two dead end intersections):
+
+$OPT(3,2) = 0$ (dead end)
+$OPT(2,2) = OPT(1,2)$ (Only one way to go))
+
+for other normal cases, same as figure (a):
+
+$OPT(i,j) = OPT(i-1,j) + OPT(i,j-1)$
+
+### Backup problem: Skiing problem
+
+$OPT(i,j)$ : length of the longest downhill path starting from $(i,j)$
+
+$OPT(i,j) = max( OPT(i',j') + 1)$ where $OPT(i',j')$ are all the neighbors that are lower than $OPT(i,j)$
+
+Initializations:
+
+Set all the local Minimum points to be 0
+
+Sort all the points in the grid by elevations, and fill in 2-d array $OPT(i,j)$ based on increasing order
+
