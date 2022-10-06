@@ -7,10 +7,15 @@ This is the repo for Sean to upload and to manage his notes for CSCI-570-Algorit
 
 ---
 
-## Index:
+## Lecture notes index:
 
 - [Week 01](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_1)
 - [Week 02](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_2)
 - [Week 03](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_3)
 - [Week 04](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_4)
 - [Week 05](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_5)
+- [Week 07](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Notes/Week_7)
+
+## Exam review notes index:
+
+- [Exam 01](https://github.com/SeanXiaoby/csci570_notes_22fall/tree/main/Exam-1)
