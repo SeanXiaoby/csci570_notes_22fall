@@ -186,3 +186,4 @@ Set all the local Minimum points to be 0
 
 Sort all the points in the grid by elevations, and fill in 2-d array $OPT(i,j)$ based on increasing order
 
+**Sorting step can be changed to finding topological sotring, which has a linear complexity, because this is a 非循环 graph**
