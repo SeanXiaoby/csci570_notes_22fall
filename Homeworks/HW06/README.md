@@ -68,6 +68,16 @@ And the value $OPT[string.size()]$ should be our final answer.
 
 ### Answer
 
+We define $OPT(i,j)$ to be the optimal value to burst the balloons between index i and index j.
+
+Say we pick $k$ that: $i\leq k \leq j$ to be the last one to be burst in these balloons, than we got:
+
+$$OPT(i,j) = max(OPT(i,j), nums[i-1]*nums[k]*nums[j+1]+OPT(i,k-1)+OPT(k+1, j))$$
+
+We initialize all the OPT values with $i ==j$ to be $nums[i-1]*nums[i]*nums[i+1]$ and we iterate the dp arrays in a asending order of difference between i and j.
+
+The final result should be the value of $OPT(0, n-1)$
+
 ---
 
 ## Problem 4
