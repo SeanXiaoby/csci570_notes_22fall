@@ -110,3 +110,17 @@ maxFlow(G, s, t, c)
 ```
 
 ##### Proof
+
+
+---
+
+#### Min cut
+
+
+---
+
+## Discussion session
+
+### Problem 1
+
+We generate the residual graph from the original max flow
