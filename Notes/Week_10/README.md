@@ -70,3 +70,8 @@ Design a flow network G that has a value of $v(f)= k$ iff there is a matching si
 - Step 4: Results:
   - If there is no feasible circulation: Then no
   - If there is, then the final circulation should be : $f_0 + f_1$
+
+---
+
+## Survey design problem
+
