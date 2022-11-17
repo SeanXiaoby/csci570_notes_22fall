@@ -62,3 +62,57 @@ In a graph $G=(V,E)$, we say taht a set of nodes $S\subseteq V$ is "indepandent"
 
 ### Set cover problem
 
+
+
+---
+
+## Satisfiability Problem (SAT)
+
+- Clause: A disjunction of terms $t_1, t_2...t_l$ where $t_l \in [x_1, x_2...x_n, \bar x_1, \bar x_2... \bar x_n]$
+- 
+
+General form of SAT:
+
+- Gvien a set of clauses $c_1, c_2,... c_k$ over a set of variables $X={x_1, x_2,...x_n}$, does there exist a satafying truth assignment?
+
+---
+## NP problems
+
+
+### Efficient certification
+
+To show a problem has efficient certification:
+
+- Polynomial length certificate
+
+a polynomial length solution
+
+- Polynomial time certificate
+
+an polynomial runtime algorithm that can check the certificate is correct
+
+### Class NP
+
+A set of all decision problems for which there exists an efficient certificate
+
+(Non-deterministic polynomial)
+
+Polynomial time problem $\subset$ NP problem
+
+### NP-complete
+
+If problem $x \in NP$ set and for all problems Y, $Y \leq _p X$, then X is the hardest problem in this NP class and the set of these kind of problems are called NP-complete
+
+- NP trasitivity
+
+If $X \leq _p Y$ and $Y \leq _p Z$, then $X \leq _p Z$
+
+### Prove NP complete
+
+- Prove the problem X is a NP problem
+- Choose a problem Y that is known to be NP complete
+- Prove $Y \leq _p X$
+
+### NP hard problem
+
+The class of problems that are at least as hard as NP-complete problems
